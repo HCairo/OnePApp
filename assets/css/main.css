@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900;1000&display=swap');
 
+/*VAR*/
 :root{
    --black:#111212;
    --white:#FFFFFF;
+}
+/* END VAR */
+
+/* RANDOMS */
+html{
+    scroll-behavior: smooth;
 }
 
 *{
@@ -19,6 +26,11 @@ main{
     margin: 50px;
 }
 
+h2{
+    font-weight: 900;
+}
+/* END RANDOMS */
+
 /*Menu*/
 #menu{
     display: flex;
@@ -32,11 +44,13 @@ main{
     color: var(--white);
     text-decoration: none;
     font-weight: 700;
+    border-bottom: 2px solid var(--black);
     transition: all 600ms;
 }
 
 #menu>nav>a:hover{
-   border-bottom:1px solid var(--white);
+   border-bottom:2px solid var(--white);
+   font-weight: 1000;
 }
 
 #menu>a>img{
@@ -53,7 +67,8 @@ main{
 
 /* ABOUT US */
 #aboutus{
-    margin: 10px;
+    padding: 10px;
+    margin-bottom: 35px;
 }
 
 #aboutus>div{
@@ -64,7 +79,7 @@ main{
     align-items: center;
 }
 
-#aboutus #test{
+#aboutus #abt{
     width: 50%;
     display: flex;
     flex-flow: column;
@@ -73,8 +88,8 @@ main{
 #aboutus>div>img{
     width: 50%;
     height: 25%;
+    padding: 1%;
     border-radius: 16px;
-    object-fit: contain;
 }
 /* END ABOUT US */
 
