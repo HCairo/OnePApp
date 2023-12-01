@@ -1,8 +1,8 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900;1000&display=swap');
 
 :root{
    --black:#111212;
-
+   --white:#FFFFFF;
 }
 
 *{
@@ -12,11 +12,62 @@
 }
 
 body{
-    background: var(--black);
+    font-family: 'Nunito', sans-serif;
 }
 
 /*Menu*/
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#menu a{
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#menu a:hover{
+    text-decoration: underline var(--black) 2px;
+}
 
 #menu>a>img{
     width: 80px;
+    border-radius: 8px;
 }
+
+#menu>nav{
+    display: flex;
+    justify-content: space-around;
+    flex-grow: .5;
+}
+/*END MENU*/
+
+/*FOOTER*/
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#footer a{
+    color: var(--black);
+    text-decoration: none;
+}
+
+footer>div{
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+}
+
+#footer>nav{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    flex-grow: .5;
+}
+/* END FOOTER */
