@@ -15,22 +15,28 @@ body{
     font-family: 'Nunito', sans-serif;
 }
 
+main{
+    margin: 50px;
+}
+
 /*Menu*/
 #menu{
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 20px;
+    background: var(--black);
 }
 
-#menu a{
-    color: var(--black);
+#menu>nav>a{
+    color: var(--white);
     text-decoration: none;
     font-weight: 700;
+    transition: all 600ms;
 }
 
-#menu a:hover{
-    text-decoration: underline var(--black) 2px;
+#menu>nav>a:hover{
+   border-bottom:1px solid var(--white);
 }
 
 #menu>a>img{
@@ -45,20 +51,57 @@ body{
 }
 /*END MENU*/
 
+/* ABOUT US */
+#aboutus{
+    margin: 10px;
+}
+
+#aboutus>div{
+    flex: 1;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#aboutus #test{
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+}
+
+#aboutus>div>img{
+    width: 50%;
+    height: 25%;
+    border-radius: 16px;
+    object-fit: contain;
+}
+/* END ABOUT US */
+
+
 /*FOOTER*/
 #footer{
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 20px;
+    background: var(--black);
 }
 
 #footer a{
-    color: var(--black);
+    color: var(--white);
     text-decoration: none;
 }
 
-footer>div{
+#footer a:hover{
+    text-decoration: underline var(--white) 2px;
+}
+
+#footer p{
+    color: var(--white);
+}
+
+#footer>div{
     display: flex;
     flex-flow: column;
     flex: 1;
