@@ -1,0 +1,22 @@
+
+
+:root{
+   --black:#111212;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--black);
+}
+
+/*Menu*/
+
+#menu>a>img{
+    width: 80px;
+}
